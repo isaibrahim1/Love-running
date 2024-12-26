@@ -2,7 +2,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;*/
+}
+
+/*Gernal styles*/
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /*generic project style */
+    color: #3a3a3a;
 }
 
 /*headerr*/
@@ -13,6 +22,8 @@ header {
 /*main*/
 main {
     background-color: lightblue;
+    /*Make main element take up any surplus space to puch footer down*/
+    flex: 1 0 auto;
 }
 
 /*footer*/
