@@ -66,11 +66,16 @@ nav {
     padding: 0 1rem;  
     box-shadow: 0 2px 2px #3a3a3a;
     display: none;
-    top: 100%;
+    top: 100%;  /* make menu under the logo*/
 }
 /*Nav toogle */
-#nav-toggle:checked-nav {
+#nav-toggle:checked~nav {  /*make dropdown menu*/
     display: block;
+}
+
+#nav-toggle {
+    display: none;
+
 }
 
 .nav-toggle-label {
@@ -82,6 +87,7 @@ main {
     background-color: lightblue;
     /*Make main element take up any surplus space to puch footer down*/
     flex: 1 0 auto;
+    margin-top: 47px;  /*push conten down */
 }
 
 /*footer*/
