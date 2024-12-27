@@ -28,6 +28,9 @@ header {
     z-index: 99;
     width: 100%;
     box-shadow: 0 2px #3a3a3a;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
 
 }
 
@@ -54,7 +57,7 @@ h1 {
     border-bottom: 1px solid #3a3a3a;
 }
 
-/* Navbar style with dropdown */
+/* Navbar style with dropdown toggle */
 nav {
     position: absolute; /*move nav out the header*/
     background-color: #ffff;
@@ -63,6 +66,15 @@ nav {
     padding: 0 1rem;  
     box-shadow: 0 2px 2px #3a3a3a;
     display: none;
+    top: 100%;
+}
+/*Nav toogle */
+#nav-toggle:checked-nav {
+    display: block;
+}
+
+.nav-toggle-label {
+   font-size: 2rem;
 }
 
 /*main*/
