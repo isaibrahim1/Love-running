@@ -98,7 +98,7 @@ main {
     justify-content: space-evenly;
     list-style-type: none;
 }
-
+ /*styling icons*/
 #social-networks i {
     font-size: 160%;
     position: relative;
