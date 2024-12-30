@@ -328,3 +328,22 @@ main {
     /*  Override the heading color set in general styles */
     color: #fafafa;
 }
+
+
+/* Signup Form*/
+#signup {
+    background-size: cover;
+    background-position: 75%;
+    flex-grow: 1;
+
+}
+#sign-form h2 {
+    
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+#sign-form {
+    color: #ffff;
+    background-color: rgba(60,60,60,0.6);
+}
