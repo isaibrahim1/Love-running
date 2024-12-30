@@ -44,7 +44,7 @@ header {
 
 header a {
     text-decoration: none;
-    color: indianred;
+    color: inherit;
 }
 
 
@@ -85,7 +85,7 @@ nav {
    font-size: 2rem;
 }
 
-/*main*/
+/*main content*/
 main {
     
     /*Make main element take up any surplus space to puch footer down*/
@@ -105,6 +105,7 @@ main {
     /* Final rgba value sets the opacity so it semi-transparent*/
     background-color: rgba(241, 109, 107, .7);
     position: absolute;
+    font-size: 130%;
     bottom: 30px;
     width: 80%;
     min-height: 200px;
@@ -115,7 +116,7 @@ main {
     color: #ffff;
 }
 
-
+/*  Reasons section */
 #reasons {
     margin:  20px auto;
     width: 90%;
@@ -127,7 +128,7 @@ main {
     font-size: 280%;
     text-align: center;
 }
-hr {
+#benefits hr {
     border-top:  1px solid #3a3a3a;
     margin: 5px 0;
 }
@@ -163,7 +164,7 @@ hr {
 /*footer*/
 #social-networks {
     text-align: center;
-    padding: 20px;
+    padding: 20px 0;
     display: flex;
     justify-content: space-evenly;
     list-style-type: none;
@@ -171,10 +172,11 @@ hr {
  /*styling icons*/
 #social-networks i {
     font-size: 160%;
-    position: relative;
+    /*position: relative;*/
     box-shadow: none;
-    width: fit-content;
-    padding-right: 1rem;
+
+    padding: 5%;
+    color: #3a3a3a;
 }
 
 /* Media query: tablets and larger (768px and up)*/
@@ -215,6 +217,24 @@ hr {
         width: 300px;
         right: 50px;
     }
+
+    /* Reasons sction */
+    #benefits-physical,
+    #benefits-mental {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #benefits-physical>div,
+    #benefits-mental>div {
+        width: 75%;
+    }
+
+    #benefits-mental>div {
+        text-align: end;
+        align-self: flex-end;
+    }
    
 }
 
@@ -225,4 +245,30 @@ hr {
     }
 }
 
+@media screen and (min-width: 1200px) {    
+    /* Reasons section */
+    #benefits {
+        display: flex;
+        flex-direction: row;
+    }
 
+    #benefits > div {
+        flex: 1;
+    }
+
+    #benefits-image {
+        order: 0
+    }
+
+    #benefits-mental {
+        order: 1;
+    }
+
+    #benefits-mental > div {
+        align-self: flex-start;
+    }
+
+    #benefits-physical > div {
+        align-self: flex-end;
+    }
+}
